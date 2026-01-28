@@ -1,0 +1,35 @@
+# Core dependencies
+python-dotenv==1.0.1
+requests==2.31.0
+pydantic>=2.9.0
+pydantic-settings==2.1.0
+
+# Firecrawl for web scraping
+# Note: Use latest version for compatibility with current Firecrawl API
+firecrawl-py>=1.0.0
+
+# Supabase for database
+# Note: Version 2.10+ required for newer API key format (sb_publishable_...)
+# Version 2.3.4 only supports old JWT format (eyJ...)
+supabase>=2.10.0
+
+# Websockets - required by Supabase's realtime feature
+# Version 13.0+ required for asyncio module support
+websockets>=13.0
+
+# Scheduling
+schedule==1.2.1
+APScheduler==3.10.4
+
+# Logging and monitoring
+structlog==24.1.0
+python-json-logger==2.0.7
+
+# RSS Feed Parsing
+feedparser>=6.0.11
+certifi>=2024.0.0  # SSL certificate bundle
+
+# Utilities
+pytz==2024.1
+python-dateutil==2.8.2
+tenacity==8.2.3
