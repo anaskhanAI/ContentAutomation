@@ -85,7 +85,7 @@ export default function SourcesPage() {
 
   const handleAddSource = async () => {
     try {
-      await api.addSource(newSource);
+      await api.createSource(newSource);
       setIsAddDialogOpen(false);
       setNewSource({ name: "", url: "", source_type: "ai_research" });
       fetchSources();
